@@ -1,3 +1,5 @@
+// Досрочный выход из функции
+
 const getCash = function (amount, balance) {
   if (amount === 0) {
     console.log('Введите сумму больше нуля');
