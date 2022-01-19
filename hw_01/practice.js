@@ -388,3 +388,118 @@
 // for (let i = 0; i < animals.length; i++) {
 //   console.log(animals[i] + ' - awesome animal!');
 // }
+
+// #2 Напишите генератор случайных строк
+// let alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+// let randomString = '';
+// while (randomString.length < 6) {
+//   randomString += alphabet[Math.floor(Math.random() * alphabet.length)];
+// }
+// console.log(randomString);
+
+// #хакерский язык
+// let input = 'javascript is awesome';
+// let output = '';
+// for (let i = 0; i < input.length; i++) {
+//   if (input[i] === 'a') {
+//     output += 4;
+//   } else if (input[i] === 'e') {
+//     output += 3;
+//   } else if (input[i] === 'i') {
+//     output += 1;
+//   } else if (input[i] === 'o') {
+//     output += 0;
+//   } else output += input[i];
+// }
+// console.log(output);
+
+// Пишем игру Виселица
+// prompt Ok и ввод возвращает введенные данные, отмена возвращает null
+// let name = prompt('Как вас зовут?');
+// console.log('Привет, ' + name);
+
+// confirm Да возвращает true, нет возвращает false
+// let likesCats = confirm('Тебе нравятся кошки?');
+// if (likesCats) {
+//   console.log('Ты классная кошка!');
+// } else {
+//   console.log('Что ж, не проблема. Все равно ты молодец');
+// }
+
+// alert просто выводит сообщение
+// alert('JavaScript is cool!');
+
+// Игра Виселица
+// let words = [
+//   'программа',
+//   'макака',
+//   'прекрасный',
+//   'оладушек',
+//   'ежевика',
+//   'машина',
+//   'уроки',
+//   'гладиолус',
+//   'труба',
+//   'жернова',
+//   'тюльпан',
+// ];
+// let word = words[Math.floor(Math.random() * words.length)];
+
+// let answerArray = [];
+// for (let i = 0; i < word.length; i++) {
+//   answerArray[i] = '_';
+// }
+// let remainangLetters = word.length;
+
+// while (remainangLetters > 0) {
+//   alert(answerArray.join(' '));
+
+//   let guess = prompt(
+//     'Угадайте букву или нажмите Отмена для выхода'
+//   ).toLowerCase();
+
+//   if (guess === null) {
+//     break;
+//   } else if (guess.length !== 1) {
+//     alert('Пожалуйста, введите только одну букву.');
+//   } else {
+//     for (let j = 0; j < word.length; j++) {
+//       if (word[j] === guess) {
+//         answerArray[j] = guess;
+//         remainangLetters--;
+//       }
+//     }
+//   }
+// }
+
+// alert(answerArray.join(' '));
+// alert('Отлично, было загадано слово ' + word);
+
+// ===============================================
+// Функции
+// let ourFirstFunction = function () {
+//   console.log('Hello, world!');
+// };
+// ourFirstFunction(); // вызов функции
+
+// let sayHello = function (name) {
+//   console.log('Hello, ' + name + '!');
+// };
+// sayHello('Sara'); // передаем аргумент функции
+// sayHello('Anna');
+
+// запись в функцию цикла for
+// let drawCats = function (howManyTimes) {
+//   for (let i = 0; i < howManyTimes; i++) {
+//     console.log(i + ' =>.<= ');
+//   }
+// };
+// drawCats(100);
+
+// передача в функцию нескольких аргументов
+let printMultipleTimes = function (howManyTimes, whatToDraw) {
+  for (let i = 0; i < howManyTimes; i++) {
+    console.log(i + ' ' + whatToDraw);
+  }
+};
+printMultipleTimes(5, ' =>.<= ');
