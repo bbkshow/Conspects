@@ -2,6 +2,10 @@
 
 // Вызовы функции для проверки работоспособности твоей реализации.
 
+function calculateEngravingPrice(message, pricePerWord) {
+  return message.split(' ').length * pricePerWord;
+}
+
 console.log(
   calculateEngravingPrice(
     'Proin sociis natoque et magnis parturient montes mus',

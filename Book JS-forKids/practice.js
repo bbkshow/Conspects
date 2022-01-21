@@ -617,24 +617,56 @@
 // Задача #3
 
 let pickWord = function () {
-  // возвращает случайно выбранное слово
+  let words = [
+    'программа',
+    'макака',
+    'прекрасный',
+    'оладушек',
+    'ежевика',
+    'машина',
+    'уроки',
+    'гладиолус',
+    'труба',
+    'жернова',
+    'тюльпан',
+  ];
+  return words[Math.floor(Math.random() * words.length)];
 };
+
 let setupAnswerArray = function (word) {
   // возвращает итоговый массив для заданного слова word
+  let answerArray = [];
+  for (let i = 0; i < word.length; i++) {
+    answerArray[i] = '_';
+  }
+  return answerArray;
 };
+
 let showPlayerProgress = function (answerArray) {
   // с помощью alert отображает текущее состояние игры
+  alert(answerArray.join(' '));
 };
+
 let getGuess = function () {
   // запрашивает ответ игрока с помощью prompt
+  return prompt('Угадайте букву или нажмите Отмена для выхода').toLowerCase();
 };
 let updateGameState = function (guess, word, answerArray) {
   // Обновляет answerArray согласно ответу игрока guess
   // Возвращает число, обозначающее, сколько раз буква guess встречается в слове, чтобы можно было обновить значение remainingLetters
+  let remainangLetters = 0;
+  for (let j = 0; j < word.length; j++) {
+    if (word[j] === guess) {
+      answerArray[j] = guess;
+      remainangLetters--;
+    }
+  }
+  return remainangLetters;
 };
 
 let showAnswerAndCongratulatePlayer = function (answerArray) {
-  // С помощью alert показывает игроку отгаданное слово и поздравляет его с победой
+  showAnswerAndCongratulatePlayer(answerArray);
+  alert('Отлично, было загадано слово ' + word);
 };
 
 // word: загаданное слово

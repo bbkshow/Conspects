@@ -2,6 +2,11 @@
 
 // Вызовы функции для проверки работоспособности твоей реализации.
 
+function checkForSpam(str) {
+  let strForCheck = str.toLowerCase();
+  return strForCheck.includes(`spam`) || strForCheck.includes(`sale`);
+}
+
 console.log(checkForSpam('Latest technology news')); // false
 
 console.log(checkForSpam('JavaScript weekly newsletter')); // false
