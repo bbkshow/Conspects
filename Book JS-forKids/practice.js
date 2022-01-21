@@ -383,6 +383,8 @@
 //   x = x * 3;
 // }
 
+// ================================================
+// Задачи
 // // #1 Напишите цикл for который изменяет массив животных, делая их прекрасными
 // let animals = ['Cat', 'Fish', 'Lemur', 'Varan'];
 // for (let i = 0; i < animals.length; i++) {
@@ -413,6 +415,7 @@
 // }
 // console.log(output);
 
+// ==================================================
 // Пишем игру Виселица
 // prompt Ok и ввод возвращает введенные данные, отмена возвращает null
 // let name = prompt('Как вас зовут?');
@@ -497,9 +500,161 @@
 // drawCats(100);
 
 // передача в функцию нескольких аргументов
-let printMultipleTimes = function (howManyTimes, whatToDraw) {
-  for (let i = 0; i < howManyTimes; i++) {
-    console.log(i + ' ' + whatToDraw);
-  }
+// let printMultipleTimes = function (howManyTimes, whatToDraw) {
+//   for (let i = 0; i < howManyTimes; i++) {
+//     console.log(i + ' ' + whatToDraw);
+//   }
+// };
+// printMultipleTimes(5, ' =>.<= ');
+
+// Возврат значения функции
+// let num = 5 + Math.floor(1.2345);
+// console.log(num);
+
+// let double = function (number) {
+//   return number * 2; // если не указать что вернуть, вернет undefined
+// };
+// console.log(double(3));
+// console.log(double(5) + double(6));
+// console.log(double(double(3))); // вызов функции в качестве аргумента другой функции
+
+// упрощение кода с помощью функций на примере Генератора случайных слов
+// randomWords[Math.floor(Math.random()) * randomWords.length];
+// let pickRandomWord = function (words) {
+//   return words[Math.floor(Math.random() * words.length)];
+// };
+// let randomWords = ['Планета', 'Червяк', 'Цветок', 'Компьютер'];
+// console.log(pickRandomWord(randomWords)); // можно передать переменную
+// // console.log(pickRandomWord(['Чарли', 'Радж', 'Николь', 'Кейт', 'Сэнди'])); // можно передать массив
+
+// Переписать генератор случайных дразнилок
+// let arrFaces = ['нос', 'рот', 'глаза', 'уши'];
+// let arrCharacters = ['вонючая', 'дерзкая', 'мерзкая', 'грязная'];
+// let arrAnimals = ['змея', 'выдра', 'мартышка', 'собака'];
+// // let randomString =
+// //   'У тебя ' +
+// //   pickRandomWord(arrFaces) +
+// //   ' словно ' +
+// //   pickRandomWord(arrCharacters) +
+// //   ' ' +
+// //   pickRandomWord(arrAnimals) +
+// //   '!!!';
+// let randomString = `У тебя ${pickRandomWord(arrFaces)} словно ${pickRandomWord(
+//   arrCharacters
+// )} ${pickRandomWord(arrAnimals)}!!!`; // этот же код с шаблонной строкой
+// console.log(randomString);
+
+// Генератор случайных дразнилок функцией
+// let generateRandomInsult = function () {
+//   let arrFaces = ['нос', 'рот', 'глаза', 'уши'];
+//   let arrCharacters = ['вонючая', 'дерзкая', 'мерзкая', 'грязная'];
+//   let arrAnimals = ['змея', 'выдра', 'мартышка', 'собака'];
+//   let randomString = `У тебя ${pickRandomWord(
+//     arrFaces
+//   )} словно ${pickRandomWord(arrCharacters)} ${pickRandomWord(arrAnimals)}!!!`;
+//   return randomString;
+// };
+
+// console.log(generateRandomInsult());
+
+// let fifthLetter = function (name) {
+//   if (name.length < 5) {
+//     return;
+//   }
+//   return 'Пятая буква вашего имени: ' + name[4] + '.';
+// };
+// console.log(fifthLetter('Николай'));
+// console.log(fifthLetter('Ник')); // имя меньше 5 букв, возвращает undefined
+
+//===================================
+// Многократное использование return вместо конструкции if ... else
+// let medalForScore = function (score) {
+//   if (score < 3) {
+//     return 'Бронзовая';
+//   }
+//   if (score < 7) {
+//     return 'Серебряная';
+//   }
+//   return 'Золотая';
+// };
+// console.log(medalForScore(4));
+
+// Сокращенная запись при создании функций
+// let double = function (number) {
+//   return number * 2;
+// }; // пример длинной записи
+
+// function double(number) {
+//   return number * 2;
+// } // короткая запись этой же функции, создается переменная double неявным образом. Это называется ОБЪЯВЛЕНИЕМ ФУНКЦИИ
+
+// Задачи по функциям
+// Задача #1
+// function add(a, b) {
+//   return a + b;
+// }
+
+// function multiply(a, b) {
+//   return a * b;
+// }
+
+// let result = add(multiply(36325, 9824), 777);
+// console.log(result);
+
+// Задача #2
+// function areArraysSame(arr1, arr2) {
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i] || arr1.length !== arr2.length) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
+// console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
+
+// Задача #3
+
+let pickWord = function () {
+  // возвращает случайно выбранное слово
 };
-printMultipleTimes(5, ' =>.<= ');
+let setupAnswerArray = function (word) {
+  // возвращает итоговый массив для заданного слова word
+};
+let showPlayerProgress = function (answerArray) {
+  // с помощью alert отображает текущее состояние игры
+};
+let getGuess = function () {
+  // запрашивает ответ игрока с помощью prompt
+};
+let updateGameState = function (guess, word, answerArray) {
+  // Обновляет answerArray согласно ответу игрока guess
+  // Возвращает число, обозначающее, сколько раз буква guess встречается в слове, чтобы можно было обновить значение remainingLetters
+};
+
+let showAnswerAndCongratulatePlayer = function (answerArray) {
+  // С помощью alert показывает игроку отгаданное слово и поздравляет его с победой
+};
+
+// word: загаданное слово
+let word = pickWord();
+// answerArray: итоговый массив
+let answerArray = setupAnswerArray(word);
+// remainingLetters: сколько букв осталось угадать
+let remainingLetters = word.length;
+while (remainingLetters > 0) {
+  showPlayerProgress(answerArray);
+  // guess: ответ игрока
+  let guess = getGuess();
+  if (guess === null) {
+    break;
+  } else if (guess.length !== 1) {
+    alert('Пожалуйста, введите одиночную букву.');
+  } else {
+    // correctGuesses: количество открытых букв
+    let correctGuesses = updateGameState(guess, word, answerArray);
+    remainingLetters -= correctGuesses;
+  }
+}
+showAnswerAndCongratulatePlayer(answerArray);
