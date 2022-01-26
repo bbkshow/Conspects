@@ -64,15 +64,16 @@
 // fn();
 
 //====================================
-// call, apply, bind
+// call, apply, bind - позволяет использовать методы из другого объекта
+// Bind - основной инструмент, потому что привязку можно сделать сейчас, а вызвать потом
 let arrNums = [100, 3, 14, 5, 67, 1];
 
 // let result = Math.min(40, 5);
 // let result = Math.min(...arrNums); // не читает массив, его надо распылить ...
 
-// let result = Math.min.apply(Math, arrNums); // работает с массивом
-// let result = Math.max.call(Math, 40, 5, 100); // работает с данными
-// let result = Math.min.bind(Math, 40, 5, 100)();
+// let result = Math.min.apply(Math, arrNums); // работает с массивом, функция возвращается в результ и сразу вызывается
+// let result = Math.max.call(Math, 40, 5, 100); // работает с данными, функция возвращается в результ и сразу вызывается
+// let result = Math.min.bind(Math, 40, 5, 100)(); функция возвращается в результ, ее надо вызвать отдельно
 // let result = Math.max.bind(Math, ...arrNums)();
 // console.log(result);
 

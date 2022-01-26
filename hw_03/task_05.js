@@ -2,6 +2,20 @@
 
 // Вызовы функции для проверки работоспособности твоей реализации.
 
+function getAllPropValues(arr, prop) {
+  let values = []; // создаем массив, в который пойдут значени
+  for (let item of arr) {
+    // перебираем массив
+    let value = item[prop]; // получаем значения из всех объектов name
+
+    if (value != undefined) {
+      // если значения не undefined
+      values.push(value); // пушим значения в массив
+    }
+  }
+  return values; // возвращаем массив
+}
+
 const products = [
   { name: 'Радар', price: 1300, quantity: 4 },
   { name: 'Сканер', price: 2700, quantity: 3 },

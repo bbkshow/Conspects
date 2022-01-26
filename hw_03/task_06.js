@@ -2,6 +2,21 @@
 
 // Вызовы функции для проверки работоспособности твоей реализации.
 
+function calculateTotalPrice(arr, productName) {
+  let total = 0; // объявляем переменную куда будет считать
+
+  for (let item of arr) {
+    // получаем отдельные объекты из массива
+    let name = item.name; // заносим объекты в переменную name
+
+    if (productName === name) {
+      // если значение name совпадает с name
+      total += item.price * item.quantity; // перемоножить и сложить
+    }
+  }
+
+  return total;
+}
 const products = [
   { name: 'Радар', price: 1300, quantity: 4 },
   { name: 'Сканер', price: 2700, quantity: 3 },

@@ -11,3 +11,12 @@ const user = {
   hobby: 'html',
   premium: true,
 };
+
+user.mood = 'happy';
+user.hobby = 'javascript';
+user['premium'] = false;
+
+for (let key of Object.keys(user)) {
+  // повторить цикл for of
+  console.log(key + ': ' + user[key]);
+}

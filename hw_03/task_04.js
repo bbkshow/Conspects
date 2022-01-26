@@ -2,6 +2,14 @@
 
 // Вызовы функции для проверки работоспособности твоей реализации.
 
+function countTotalSalary(employees) {
+  let total = 0;
+  for (let employe in employees) {
+    total += employees[employe];
+  }
+  return total;
+}
+
 console.log(countTotalSalary({})); // 0
 
 console.log(
