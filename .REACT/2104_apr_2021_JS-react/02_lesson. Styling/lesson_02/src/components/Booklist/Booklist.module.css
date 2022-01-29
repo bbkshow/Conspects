@@ -1,0 +1,16 @@
+.container {
+    background-color: gray;
+}
+
+.name {
+    font-weight: 600;
+    color: maroon;
+}
+
+.qty {
+    font-weight: 600;
+}
+
+.hello {
+    background-color: green;
+}

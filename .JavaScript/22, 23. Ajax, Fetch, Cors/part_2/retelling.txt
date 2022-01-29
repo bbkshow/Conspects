@@ -1,0 +1,14 @@
+
+
+// URI - https://jsonplaceholder.typicode.com/todos/2
+// URL - https://jsonplaceholder.typicode.com
+// URN = /todos/2
+// endpoint = /todos/2
+// static parameter /todos
+// dynamic parameter /2
+
+// `https://newsapi.org/v2/top-headlines?country=de&category=sports`;
+// ? начало строки запроса
+// query spting country=de
+// query spting category=sports
+// & разделяет строки запроса

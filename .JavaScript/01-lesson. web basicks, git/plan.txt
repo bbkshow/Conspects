@@ -1,0 +1,32 @@
+1. Как устроен интернет
+2. Протоколы передачи данных
+3. Приложения клиент / сервер
+4. REST
+5. Git
+
+
+Настройка редактора кода
+https://gist.github.com/gitspawn/b4444535274daa928dede7003dace1ea
+
+
+Установка Git
+https://phoenixnap.com/kb/how-to-install-git-windows
+
+Команды Git
+https://gist.github.com/gitspawn/2ab33c93bd95c61af1d0a14ba9b14470
+
+
+Большая обучалка по Git
+https://githowto.com/ru
+
+
+Шпаргалка по Git
+https://agladky.ru/blog/git-cheat-sheet/
+
+
+Редактор
+https://code.visualstudio.com/
+
+
+HTTP SATUS CODES
+https://httpstatuses.com/

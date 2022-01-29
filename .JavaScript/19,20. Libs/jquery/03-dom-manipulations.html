@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    header {
+      background-color: darkcyan;
+      color: white;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    #container {
+      width: 85%;
+      margin: auto;
+      padding: 5px;
+    }
+
+    img {
+      display: block;
+      width: 300px;
+      height: auto;
+    }
+
+    .btn-myButton {
+      color: darkgreen;
+      background-color: darkolivegreen;
+    }
+
+    .myClass {
+      color: white;
+      background-color: darkolivegreen;
+    }
+
+    .main-paragraph{
+      background-color: aqua;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header>Jquery DOM</header>
+  <button id="btn1" class="btn">Button_01</button>
+  <h1 class="heading1">Heading 1</h1>
+  <p class="qwe paragraph1">
+    jQuery is a fast, small, and feature-rich JavaScript library. It makes
+    things like <span>HTML document traversal and manipulation</span>, event
+    handling, animation, and Ajax much simpler with an easy-to-use API that
+    works across a multitude of browsers.
+  </p>
+  <h1 class="heading2">Heading 2</h1>
+  <p class="paragraph2">
+    Aside from the change to no longer ensure XHTML-compliant tags for you,
+    we do not expect other compatibility issues when upgrading from a
+    <span>jQuery 3.0+ version</span>. To upgrade, have a look at the new 3.5
+    Upgrade Guide. If you haven’t yet upgraded to jQuery 3+, first have a
+    look at the 3.0 Upgrade Guide.
+  </p>
+
+  <div id="myDiv">
+    Hello world!!!
+  </div>
+
+
+  <input type="text" name="" id="newListItem">
+
+
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <hr>
+
+  <!-- // List -->
+  <ul id="users"></ul>
+
+  <a href="https://google.com">Google</a>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // $('#btn1').on('click', function(event) {
+      //   // $('h1.heading1').css('color', 'magenta')
+      //   $('h1.heading1').css({
+      //     backgroundColor: 'green',
+      //     color: 'white'
+      //   })
+      // })
+
+      // $('.paragraph1').hover(function(event) {
+      //   $(event.currentTarget).addClass('main-paragraph')
+      // })
+
+        // $('#btn1').on('click', function(event) {
+        //   $('.paragraph1').removeClass('main-paragraph')
+        // })
+
+        // $('#btn1').on('click', function(event) {
+        //   $('.paragraph1').toggleClass('main-paragraph')
+        // })
+
+
+        // $('#myDiv').text('To be or not to be...')
+
+        // let newHtml = '<h1>To be or not to be...</h1>'
+        // $('#myDiv').html(newHtml)
+
+
+        // $('#myDiv').on('mouseenter', function(event) {
+        //   $(event.target).html('<h1>To be or not to be...</h1>')
+        // })
+
+        // $('#myDiv').on('mouseleave', function(event) {
+        //   $(event.target).html('Hello world')
+        // })
+
+
+        // $('ul#list').append("<li>Pizza</li>")
+        
+        // $('.paragraph1').appendTo('header')
+        // $('.paragraph1').appendTo('.paragraph2')
+
+        // $('ul#list').before( '<h1 class="heading3">Heading 3</h1>')
+
+        // $('ul#list').after( '<h1 class="heading4">Heading 4</h1>')
+
+
+
+        // Remove elements
+        // $('ul#list').remove()
+        // $('ul#list').detach()
+        // $('ul#list').empty()
+
+
+        //Wrap
+        // $('.paragraph1').wrap('<h3>')
+        // $('p').wrapAll('<h3>')
+
+
+          // Attributes
+
+
+        // $('a[href="https://google.com"]').attr('target', '_blank')
+        // $('a[href="https://google.com"]').removeAttr('_blank')
+
+
+
+        // let friends = ['vova', 'sara', 'mike', 'bob']
+        // $.each(friends, function(index, friend) {
+        //   // console.log(index);
+        //   console.log(friend)
+        //   $('#users').append(`<li>${friend}</li>`)
+        //   // body
+        // })
+
+
+          $('#newListItem').on('keypress', function(event) {
+            if (event.code === 'Enter') {
+              $('ul#list').append(`<li>${event.target.value}</li>`)
+            }
+          })
+    })
+
+
+  </script>
+</body>
+
+</html>

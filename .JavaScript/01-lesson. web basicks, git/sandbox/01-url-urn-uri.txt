@@ -1,0 +1,37 @@
+https://tproger.ru/translations/configure-webpack4/
+https://www.youtube.com/watch?v=4CzYXfBeIdM
+
+URL - <протокол><домен>
+https://www.youtube.com
+
+
+URN
+/watch?v=4CzYXfBeIdM
+
+
+
+URI  URL + URN
+https://www.youtube.com/watch?v=4CzYXfBeIdM
+
+
+// Структура строки
+https://site.com/author/b45erlz?category=adventure&status=unread#comments
+
+https: - протокол
+site.com -  домен, хост
+author/b45erlz - путь где мы в приложении
+? - строка запроса (query string)
+v=4CzYXfBeIdM
+category=adventure
+category=adventure&status=unread
+& - разделяет параметры запроса
+#comments - якорь
+
+
+
+
+https://182.24.45.14/ => www.youtube.com
+https://192.136.35.205/ => www.google.com
+
+
+http://192.168.1.205

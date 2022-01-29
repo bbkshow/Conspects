@@ -1,0 +1,27 @@
+@value red-color from '../../vars.module.css';
+@value green-color from '../../vars.module.css';
+
+.container {
+    background-color: gray;
+}
+
+.name {
+    font-weight: 600;
+    color: maroon;
+}
+
+.qty {
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.awaliable {
+    composes: qty;
+    color: green-color;
+}
+
+.not-awaliable {
+    composes: qty;
+    color: red-color;
+}
