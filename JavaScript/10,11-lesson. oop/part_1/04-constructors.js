@@ -19,7 +19,7 @@
 // let samsung = new Product(); // instance
 // let lg = new Product(); // instance
 
-// console.log(apple instanceof Product);
+// console.log(apple instanceof Product); // ПРОВЕРКА НА ЭКЗЕМПЛЯР КЛАССА <============
 // console.log(samsung);
 // console.log(lg);
 

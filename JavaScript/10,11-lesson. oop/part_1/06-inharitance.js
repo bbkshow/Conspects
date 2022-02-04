@@ -82,13 +82,13 @@ function Customer(firstName, lastName, membership) {
   // this.firstName = firstName;
   // this.lastName = lastName;
   // this.membership = membership;
-  User.apply(this, arguments);
+  User.apply(this, arguments); // ЭТО НАСЛЕДОВАНИЕ (INHARITANCE) ОТ ОБЪЕКТА USER <==============
   this.membership = membership;
 }
 
-// Передать прототип
+// Передать прототип <===================
 Customer.prototype = Object.create(User.prototype);
-// Привызать конструктор
+// Привязать конструктор <===================
 Customer.prototype.constructor = Customer;
 
 Customer.prototype.getAllData = function () {

@@ -31,8 +31,8 @@ let objB = {
 
 // console.log(objB);;
 
-let objA = Object.create(objB);
-objA.a = 1;
+let objA = Object.create(objB); // СОЗДАЕТ ПРОТОТИП <================
+objA.a = 1; // ДОБАВЛЯЕТ СВОЙСТВО КЛЮЧ-ЗНАЧЕНИЕ В ОБЪЕКТ <================
 objA.b = 2;
 objA.pizza = 'Pizza';
 // objA.z = 1000;
@@ -52,6 +52,6 @@ __proto__
                 */
 
 // hasOwnProperty ====================
-let own = objA.hasOwnProperty('pizza');
+let own = objA.hasOwnProperty('pizza'); // ПРОВЕРЯЕТ ЕСТЬ ЛИ СВОЙСТВО НА САМОМ ОБЪЕКТЕ, А НЕ В ПРОТО <================
 own = objA.hasOwnProperty('x');
 console.log(own);
