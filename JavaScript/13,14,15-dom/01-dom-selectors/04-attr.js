@@ -1,4 +1,4 @@
-// let yahooRef = document.querySelectorAll('a')[1];
+let yahooRef = document.querySelectorAll('a')[1];
 // console.log(yahooRef);
 
 // Set Attribute
@@ -14,9 +14,9 @@
 // console.log(images);
 
 // Get Attribute
-// let attr = yahooRef.getAttribute('href');
-// console.log(attr);
-// let images = document.querySelectorAll('img')[0];
+let attr = yahooRef.getAttribute('href');
+console.log(attr);
+let images = document.querySelectorAll('img')[0];
 
 // let attr = images.getAttribute('src');
 // console.log(attr);

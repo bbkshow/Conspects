@@ -23,9 +23,9 @@ let h1 = document.querySelector('h1');
 // h1.classList.replace('green', 'red');
 
 // Contains class
-// let greenContains = h1.classList.contains('green');
-// if (greenContains) {
-//     h1.classList.add('main');
-// }
+let greenContains = h1.classList.contains('green');
+if (greenContains) {
+  h1.classList.add('main');
+}
 
-// console.log(greenContains);
+console.log(greenContains);

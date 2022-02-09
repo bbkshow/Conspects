@@ -11,11 +11,17 @@
 
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
-function logItems(array) {
-  for (let i = 1; i < array.length; i++) {
-    console.log(`${i} - ${array[i]}`);
-  }
-}
+// function logItems(array) {
+//   for (let i = 1; i < array.length; i++) {
+//     console.log(`${i} - ${array[i]}`);
+//   }
+// }
+
+// let logItems = (array) => {
+//   for (let i = 1; i < array.length; i++) {
+//     console.log(`${i} - ${array[i]}`);
+//   }
+// };
 
 // logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
-logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+// logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
