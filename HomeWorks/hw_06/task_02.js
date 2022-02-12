@@ -9,7 +9,7 @@
 // ==========================================
 import users from './users.js';
 
-let getUsersWithEyeColor = (users, color) => {
+const getUsersWithEyeColor = (users, color) => {
   return users.filter((user) => {
     return user.eyeColor === color;
   });

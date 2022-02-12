@@ -3,9 +3,9 @@
 import users from './users.js';
 // console.log(users);
 
-let getUserNames = users.map((user) => {
-  return user.name;
-});
+// let getUserNames = users.map((user) => {
+//   return user.name;
+// });
 
 // let getUserNames = users.map(({ name }) => name);
 
