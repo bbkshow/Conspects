@@ -100,3 +100,8 @@ formRef.elements.name.value
  Попробовать написать модалку!!!!! Разобрать седьмую модалку
 
 
+ как взять data атрибуты
+ data-value='css'
+dataset.value
+
+
