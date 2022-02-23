@@ -1,4 +1,4 @@
-// CommonJs Modules
+ls; // CommonJs Modules
 // let PI = require("./user");\
 
 // let { PI, greet, vova, customer } = require("./user");
@@ -17,10 +17,10 @@
 
 // ===================================
 // ES modules
-import Customer from "./customerES.js";
+import Customer from './customerES.js';
 
 // let vova = new Customer("Vova", 25);
-let vova = new Customer("Vova", 25);
+let vova = new Customer('Vova', 25);
 
 // console.log(vova);
 console.log(vova.sayHello());
