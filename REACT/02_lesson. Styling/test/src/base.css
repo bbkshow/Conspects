@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: maroon;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
