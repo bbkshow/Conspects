@@ -1,58 +1,55 @@
-import React, { Component } from "react";
-import Layout from "./Layout";
+import React, { Component } from 'react';
+import Layout from './Layout';
 // import Tasks from "./Tasks/Tasks";
-// import Modal from "./Modal";
+import Modal from './Modal';
 // import Clock from "./Clock";
-import Tabs from "./Tabs";
-import tabs from "../tabs.json";
+// import Tabs from "./Tabs";
+// import tabs from "../tabs.json";
 
 export default class App extends Component {
-    // state = {
-    //     showModal: false,
-    // };
+  state = {
+    showModal: false,
+  };
 
-    // toggleModal = () => {
-    //     this.setState((prevState) => ({
-    //         showModal: !prevState.showModal,
-    //     }));
-    // };
+  toggleModal = () => {
+    this.setState((prevState) => ({
+      showModal: !prevState.showModal,
+    }));
+  };
 
-    render() {
-        // let { showModal } = this.state;
+  render() {
+    let { showModal } = this.state;
 
-        return (
-            <Layout>
-                {/* <Tasks /> */}
-                {/* ============================= */}
-                {/* {!showModal && (
-                    <button onClick={this.toggleModal} type="button">
-                        Open modal
-                    </button>
-                )} */}
-                {/* {showModal && (
-                    <Modal
-                        onClose={this.toggleModal}
-                        onCloseModal={this.toggleModal}
-                    >
-                        <h2>Modal title</h2>
-                        <p>lorem ipsum dolor sit amet...</p>
-                        <button onClick={this.toggleModal} type="button">
-                            Close modal
-                        </button>
-                    </Modal>
-                )} */}
-                {/* ========================= */}
-                {/* {!showModal && (
+    return (
+      <Layout>
+        {/* <Tasks /> */}
+        {/* ============================= */}
+        {!showModal && (
+          <button onClick={this.toggleModal} type="button">
+            Open modal
+          </button>
+        )}
+        {showModal && (
+          <Modal onClose={this.toggleModal} onCloseModal={this.toggleModal}>
+            <h2>Modal title</h2>
+            <p>lorem ipsum dolor sit amet...</p>
+            <button onClick={this.toggleModal} type="button">
+              Close modal
+            </button>
+          </Modal>
+        )}
+        {/* ========================= */}
+        {/* {!showModal && (
                     <button onClick={this.toggleModal} type="button">
                         Close Clock
                     </button>
                 )}
                 {!showModal && <Clock />} */}
-                {/* =========================== */}
-                <Tabs items={tabs} />
-            </Layout>
-        );
-    }
+        {/* =========================== */}
+        {/* <Tabs items={tabs} /> */}
+      </Layout>
+    );
+  }
 }
 
 // Common lifecycle methods

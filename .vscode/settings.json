@@ -1,4 +1,10 @@
 {
   "prettier.singleQuote": true,
-  "liveServer.settings.multiRootWorkspaceName": "Conspects"
+  "liveServer.settings.multiRootWorkspaceName": "Conspects",
+  "git.ignoreLimitWarning": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "razor": "html",
+    "plaintext": "pug"
+  }
 }
