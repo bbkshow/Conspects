@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>js_project_01</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap__header">
+        <button type="button" id="header__menuBtn" data-action="open-modal">
+          Table
+        </button>
+        <div id="myMenu" class="menu">
+          <div class="menu__content">
+            <button
+              type="button"
+              id="header__closeMenuBtn"
+              data-action="close__menu"
+            >
+              Close
+            </button>
+            <ul class="m__content">
+              <li>0-That key has no keycode</li>
+              <li>3-break</li>
+              <li>8-backspace / delete</li>
+              <li>9-tab</li>
+              <li>12-clear</li>
+              <li>13-enter</li>
+              <li>16-shift</li>
+              <li>17-ctrl</li>
+              <li>18-alt</li>
+              <li>19-pause/break</li>
+              <li>20-caps lock</li>
+              <li>21-hangul</li>
+              <li>25-hanja</li>
+              <li>27-escape</li>
+              <li>28-conversion</li>
+              <li>29-non-conversion</li>
+              <li>32-spacebar</li>
+              <li>33-page up</li>
+              <li>34-page down</li>
+              <li>35-end</li>
+              <li>36-home</li>
+              <li>37-left arrow</li>
+              <li>38-up arrow</li>
+              <li>39-right arrow</li>
+              <li>40-down arrow</li>
+              <li>41-select</li>
+              <li>42-print</li>
+              <li>43-execute</li>
+              <li>44-Print Screen</li>
+              <li>45-insert</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main__wrap">
+        <div class="main__wrapKeyDisplay">
+          <p class="display__pressAnyKey">
+            Press any key to get the JavaScript event keycode
+          </p>
+          <p class="display__keyDisplay"></p>
+        </div>
+        <ul class="main__wrapCard">
+          <li class="main__card">
+            <p class="main__cardTitle">event.key</p>
+            <p class="card__eventKeyData"></p>
+          </li>
+          <li class="main__card">
+            <p class="main__cardTitle">event.location</p>
+            <p class="card__eventLocationData"></p>
+          </li>
+          <li class="main__card">
+            <p class="main__cardTitle">event.which</p>
+            <p class="card__eventWhichData"></p>
+          </li>
+          <li class="main__card">
+            <p class="main__cardTitle">event.code</p>
+            <p class="card__eventCodeData"></p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap__footer">
+        <p>Made by Alexander Babak</p>
+      </div>
+    </footer>
+    <script src="./js/inputkey.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/keyCodeList.js" type="module"></script>
+  </body>
+</html>
